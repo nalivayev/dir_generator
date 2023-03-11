@@ -1,0 +1,95 @@
+object DirGeneratorForm: TDirGeneratorForm
+  Left = 259
+  Top = 96
+  AutoSize = True
+  BorderWidth = 5
+  Caption = #1043#1077#1085#1077#1088#1072#1090#1086#1088' DIR-'#1092#1072#1081#1083#1086#1074
+  ClientHeight = 113
+  ClientWidth = 237
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LabeledEdit1: TLabeledEdit
+    Left = 0
+    Top = 16
+    Width = 209
+    Height = 21
+    Color = clBtnFace
+    EditLabel.Width = 63
+    EditLabel.Height = 13
+    EditLabel.Caption = #1060#1072#1081#1083#1099' '#1082#1072#1088#1090
+    ReadOnly = True
+    TabOrder = 0
+    OnChange = LabeledEdit1Change
+  end
+  object LabeledEdit2: TLabeledEdit
+    Left = 0
+    Top = 56
+    Width = 209
+    Height = 21
+    Color = clBtnFace
+    EditLabel.Width = 117
+    EditLabel.Height = 13
+    EditLabel.Caption = #1060#1072#1081#1083' '#1082#1083#1072#1089#1089#1080#1092#1080#1082#1072#1090#1086#1088#1072
+    TabOrder = 2
+    OnChange = LabeledEdit1Change
+  end
+  object BitBtn1: TBitBtn
+    Left = 216
+    Top = 16
+    Width = 21
+    Height = 21
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      0400000000008000000000000000000000001000000000000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00DDDDDDDDDDDD
+      DDDDDDDDDDDDDDDDDDDDD00000000000DDDDD003333333330DDDD0B033333333
+      30DDD0FB03333333330DD0BFB03333333330D0FBFB0000000000D0BFBFBFBFB0
+      DDDDD0FBFBFBFBF0DDDDD0BFB0000000DDDDDD000DDDDDDDD000DDDDDDDDDDDD
+      DD00DDDDDDDDD0DDD0D0DDDDDDDDDD000DDDDDDDDDDDDDDDDDDD}
+    TabOrder = 1
+    OnClick = BitBtn1Click
+  end
+  object BitBtn2: TBitBtn
+    Left = 216
+    Top = 56
+    Width = 21
+    Height = 21
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      0400000000008000000000000000000000001000000000000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00DDDDDDDDDDDD
+      DDDDDDDDDDDDDDDDDDDDD00000000000DDDDD003333333330DDDD0B033333333
+      30DDD0FB03333333330DD0BFB03333333330D0FBFB0000000000D0BFBFBFBFB0
+      DDDDD0FBFBFBFBF0DDDDD0BFB0000000DDDDDD000DDDDDDDD000DDDDDDDDDDDD
+      DD00DDDDDDDDD0DDD0D0DDDDDDDDDD000DDDDDDDDDDDDDDDDDDD}
+    TabOrder = 3
+    OnClick = BitBtn2Click
+  end
+  object Button1: TButton
+    Left = 136
+    Top = 88
+    Width = 73
+    Height = 25
+    Caption = #1055#1088#1080#1089#1090#1091#1087#1080#1090#1100
+    Default = True
+    Enabled = False
+    TabOrder = 4
+    OnClick = Button1Click
+  end
+  object OpenDialog: TOpenDialog
+    Options = [ofHideReadOnly, ofAllowMultiSelect, ofEnableSizing]
+  end
+  object SaveDialog: TSaveDialog
+    Filter = 'DIR '#1092#1072#1081#1083#1099' (*.dir)|*.dir'
+    Left = 32
+  end
+end
